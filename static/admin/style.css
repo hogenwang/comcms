@@ -1,0 +1,139 @@
+body {font-family: 'Microsoft YaHei',Helvetica,Arial,sans-serif; padding:0; margin:0; border:0; color:#333;}
+body, ul, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form, input { margin: 0; padding: 0;}
+
+/*login page*/
+.loginbody {  padding-top: 40px;  padding-bottom: 40px;  background-color: #eee;}
+.form-signin { max-width: 330px;  padding: 15px;  margin: 0 auto;}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {  margin-bottom: 10px;}
+.form-signin .checkbox {  font-weight: normal;}
+.form-signin .form-control {  position: relative;  height: auto;  -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px;font-size: 16px;}
+.form-signin .form-control:focus { z-index: 2;}
+.form-signin input[type="text"] {  margin-bottom: -1px;  border-bottom-right-radius: 0;  border-bottom-left-radius: 0; margin-bottom: 10px}
+.form-signin input[type="password"] {  margin-bottom: 10px;  border-top-left-radius: 0;  border-top-right-radius: 0;
+}
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom:50px
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+  border-radius:0
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.topsearch{ margin-right:30px}
+.footer{ position:fixed; bottom:0px; background:#fefefe; color:#999; text-align:right; height:40px; width:100%; line-height:40px; font-size:14px; border-top:solid 1px #dedede; z-index:100}
+	.footer p{ padding-right:30px}
+/*验证部分*/
+label.error{ color:#FF0000; background:url(unchecked.gif) no-repeat 0px center; padding:5px 0px 5px 18px;}
+input.error{ border-color:#ff0000}
+.hide{ display:none}
+.hide{ display:none}
+
+.my-upload-span{ padding-top:2px; padding-bottom:0px}
+	.my-upload-span lable{ margin-bottom:0px}
+/*=====================以下部分是WebUploader必须的====================*/
+.webuploader-container{ position:relative; }
+.webuploader-element-invisible{ position:absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px,1px,1px,1px); }
+.webuploader-pick{ position:relative; display:inline-block; width:65px; line-height:30px; height:30px; border:1px solid #e1e1e1; cursor:pointer; background:#fff; color:#333; text-align:center; overflow:hidden; zoom:1; *display:inline; }
+.webuploader-pick-hover{ background:#fafafa; }
+.webuploader-pick-disable{ opacity:0.6; pointer-events:none; }
+/*=====================以上部分是WebUploader必须的====================*/
