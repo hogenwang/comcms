@@ -212,7 +212,7 @@
 	    htmlText += '<td><div class="input-group"><input type="text" class="form-control upload-path" id="slide_Img_{0}" name="slide_Img" value="" placeholder="请输入图片地址"><span class="input-group-addon my-upload-span upload-img" id="basic-addon_{0}"></span></div></td>';
 		htmlText +='<td><input type="text" class="form-control" id="slide_Link_{0}" name="slide_Link" value="" placeholder="请输入链接地址"></td>';
 		htmlText +='<td><input type="text" class="form-control" id="slide_Alt_{0}" name="slide_Alt" value="" placeholder="请输入图片标题"></td>';
-		htmlText +='<td><button type="button" class="btn btn-sm btn-danger"><i class="fa fa-minus-square" onclick="delmySlideRow({0})"></i> 删除</button></td></tr>';
+		htmlText +='<td><button type="button" class="btn btn-sm btn-danger" onclick="delmySlideRow({0})"><i class="fa fa-minus-square"></i> 删除</button></td></tr>';
 	    var items = 1;
 
 	    function addSlideRow() {

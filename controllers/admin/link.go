@@ -43,7 +43,7 @@ func (c *LinkController) List() {
 	c.Data["Page"] = page
 	c.Data["Total"] = total
 	c.Data["paginator"] = p
-	c.TplNames = "admin/link.tpl"
+	c.TplName = "admin/link.tpl"
 }
 
 //添加友情链接页面
@@ -58,7 +58,7 @@ func (c *LinkController) Add() {
 	c.Data["Action"] = "add"
 	c.Data["Entity"] = entity
 
-	c.TplNames = "admin/link_add.tpl"
+	c.TplName = "admin/link_add.tpl"
 }
 
 //编辑友情链接页面
@@ -77,7 +77,7 @@ func (c *LinkController) Edit() {
 	c.Data["Title"] = "修改友情链接"
 	c.Data["Action"] = "edit"
 	c.Data["Entity"] = entity
-	c.TplNames = "admin/link_add.tpl"
+	c.TplName = "admin/link_add.tpl"
 }
 
 //执行添加友情链接

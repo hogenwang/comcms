@@ -46,7 +46,7 @@ func (c *ArticleController) List() {
 	c.Data["Page"] = page
 	c.Data["Total"] = total
 	c.Data["paginator"] = p
-	c.TplNames = "admin/article.tpl"
+	c.TplName = "admin/article.tpl"
 }
 
 //添加文章页面
@@ -63,7 +63,7 @@ func (c *ArticleController) Add() {
 	c.Data["Action"] = "add"
 	c.Data["Entity"] = entity
 	c.Data["Categories"] = Categories
-	c.TplNames = "admin/article_add.tpl"
+	c.TplName = "admin/article_add.tpl"
 }
 
 //编辑文章页面
@@ -85,7 +85,7 @@ func (c *ArticleController) Edit() {
 	c.Data["Action"] = "edit"
 	c.Data["Entity"] = entity
 	c.Data["Categories"] = Categories
-	c.TplNames = "admin/article_add.tpl"
+	c.TplName = "admin/article_add.tpl"
 }
 
 //执行添加文章

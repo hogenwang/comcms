@@ -19,7 +19,7 @@ func (c *CategoryController) List() {
 	categories := models.GetCategoryTree(0, -1, false, 0)
 	c.Data["List"] = categories
 	c.Data["Title"] = "栏目列表"
-	c.TplNames = "admin/category.tpl"
+	c.TplName = "admin/category.tpl"
 }
 
 //显示添加文章栏目
@@ -45,7 +45,7 @@ func (c *CategoryController) Add() {
 	c.Data["Entity"] = entity
 	c.Data["TemplatesList"] = templatesList
 	c.Data["PCategories"] = PCategories
-	c.TplNames = "admin/category_add.tpl"
+	c.TplName = "admin/category_add.tpl"
 }
 
 //修改文章栏目页面
@@ -73,7 +73,7 @@ func (c *CategoryController) Edit() {
 	c.Data["Action"] = "edit"
 	c.Data["TemplatesList"] = templatesList
 	c.Data["PCategories"] = PCategories
-	c.TplNames = "admin/category_add.tpl"
+	c.TplName = "admin/category_add.tpl"
 }
 
 //执行添加
@@ -105,7 +105,7 @@ func (c *CategoryController) DoAdd() {
 	if entity.Title == "" {
 		tip.Message = "分类名称不能为空"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 
@@ -138,7 +138,7 @@ func (c *CategoryController) DoAdd() {
 		tip.Message = "添加新分类失败：" + err.Error()
 	}
 	c.Data["json"] = tip
-	c.ServeJson()
+	c.ServeJSON()
 	c.StopRun()
 
 }
@@ -152,14 +152,14 @@ func (c *CategoryController) DoEdit() {
 	if err != nil {
 		tip.Message = "错误参数传递！"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 	entity := models.GetCategory(id)
 	if entity == nil {
 		tip.Message = "系统找不到本记录！"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 	entity.Title = c.GetString("Title")
@@ -182,7 +182,7 @@ func (c *CategoryController) DoEdit() {
 	if entity.Title == "" {
 		tip.Message = "分类名称不能为空"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 
@@ -215,7 +215,7 @@ func (c *CategoryController) DoEdit() {
 		tip.Message = "编辑分类失败：" + err.Error()
 	}
 	c.Data["json"] = tip
-	c.ServeJson()
+	c.ServeJSON()
 	c.StopRun()
 }
 

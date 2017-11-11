@@ -18,13 +18,13 @@ func (c *AdminController) Index() {
 	c.Data["Website"] = "Admin Control Panel"
 	c.Data["Title"] = "后台管理首页"
 	//c.Layout = "admin/layout.tpl"
-	c.TplNames = "admin/index.tpl"
+	c.TplName = "admin/index.tpl"
 }
 
 //登录页面
 func (c *AdminController) Login() {
 	c.Data["Tip"] = "请输入用户名和密码登录系统"
-	c.TplNames = "admin/login.tpl"
+	c.TplName = "admin/login.tpl"
 }
 
 //执行登录
@@ -75,7 +75,7 @@ func (c *AdminController) ModPwd() {
 	username, _ := c.GetSession("adminname").(string)
 	c.Data["Title"] = "修改密码"
 	c.Data["UserName"] = username
-	c.TplNames = "admin/admin_modpwd.tpl"
+	c.TplName = "admin/admin_modpwd.tpl"
 }
 
 //执行修改密码
@@ -167,7 +167,7 @@ func (c *AdminController) List() {
 	c.Data["Page"] = page
 	c.Data["Total"] = total
 	c.Data["paginator"] = p
-	c.TplNames = "admin/admin_list.tpl"
+	c.TplName = "admin/admin_list.tpl"
 }
 
 //显示添加管理员
@@ -179,7 +179,7 @@ func (c *AdminController) Add() {
 	c.Data["Title"] = "添加管理员"
 	c.Data["Action"] = "add"
 	c.Data["Entity"] = entity
-	c.TplNames = "admin/admin_add.tpl"
+	c.TplName = "admin/admin_add.tpl"
 }
 
 //执行添加管理员
@@ -237,7 +237,7 @@ func (c *AdminController) Edit() {
 	c.Data["Title"] = "编辑/查看管理员详情"
 	c.Data["Action"] = "edit"
 	c.Data["Entity"] = entity
-	c.TplNames = "admin/admin_add.tpl"
+	c.TplName = "admin/admin_add.tpl"
 }
 
 //执行修改管理员
@@ -355,7 +355,7 @@ func CheckAdminLogin(c *beego.Controller, t int64) {
 			json.ReturnUrl = "/admin/login"
 
 			c.Data["json"] = json
-			c.ServeJson()
+			c.ServeJSON()
 			c.StopRun()
 		}
 
@@ -383,7 +383,7 @@ func EchoTip(c *beego.Controller, json *models.TipJSON) {
 	if c.IsAjax() {
 		//异步提交
 		c.Data["json"] = json
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	} else {
 		tpl := "admin/error.tpl"

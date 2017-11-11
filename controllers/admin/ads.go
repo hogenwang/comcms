@@ -45,7 +45,7 @@ func (c *AdsController) List() {
 	c.Data["Page"] = page
 	c.Data["Total"] = total
 	c.Data["paginator"] = p
-	c.TplNames = "admin/ads.tpl"
+	c.TplName = "admin/ads.tpl"
 }
 
 //添加广告页面
@@ -60,7 +60,7 @@ func (c *AdsController) Add() {
 	c.Data["Action"] = "add"
 	c.Data["Entity"] = entity
 
-	c.TplNames = "admin/ads_add.tpl"
+	c.TplName = "admin/ads_add.tpl"
 }
 
 //编辑广告页面
@@ -79,7 +79,7 @@ func (c *AdsController) Edit() {
 	c.Data["Title"] = "修改广告"
 	c.Data["Action"] = "edit"
 	c.Data["Entity"] = entity
-	c.TplNames = "admin/ads_add.tpl"
+	c.TplName = "admin/ads_add.tpl"
 }
 
 //执行添加广告

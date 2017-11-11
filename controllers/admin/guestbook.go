@@ -43,7 +43,7 @@ func (c *GuestbookController) List() {
 	c.Data["Page"] = page
 	c.Data["Total"] = total
 	c.Data["paginator"] = p
-	c.TplNames = "admin/guestbook.tpl"
+	c.TplName = "admin/guestbook.tpl"
 }
 
 //查看留言板页面
@@ -62,7 +62,7 @@ func (c *GuestbookController) View() {
 	c.Data["Title"] = "查看留言板详情"
 	c.Data["Action"] = "view"
 	c.Data["Entity"] = entity
-	c.TplNames = "admin/guestbook_view.tpl"
+	c.TplName = "admin/guestbook_view.tpl"
 }
 
 //删除留言板

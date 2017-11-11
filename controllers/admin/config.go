@@ -16,7 +16,7 @@ func (c *ConfigController) Get() {
 	cfg = models.GetConfig()
 	c.Data["Title"] = "修改系统设置"
 	c.Data["Cfg"] = cfg
-	c.TplNames = "admin/config.tpl"
+	c.TplName = "admin/config.tpl"
 }
 
 //执行更新
@@ -29,14 +29,14 @@ func (c *ConfigController) Post() {
 	if cfg == nil {
 		tip.Message = "系统找不到本记录"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 	cfg.SiteName = c.GetString("SiteName")
 	if cfg.SiteName == "" {
 		tip.Message = "请输入站点名称"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 	cfg.SiteURL = c.GetString("SiteURL")
@@ -53,12 +53,12 @@ func (c *ConfigController) Post() {
 		tip.Status = models.TipSuccess
 		tip.Message = "修改站点配置成功"
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	} else {
 		tip.Message = "修改站点配置失败：" + err.Error()
 		c.Data["json"] = tip
-		c.ServeJson()
+		c.ServeJSON()
 		c.StopRun()
 	}
 }

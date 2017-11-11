@@ -69,7 +69,7 @@ func (this *UEController) UEditor() {
 }
 
 func Config(this *beego.Controller) {
-	//this.ServeJson(configJson)
+	//this.ServeJSON(configJson)
 	this.Ctx.WriteString(string(configJson))
 	this.StopRun()
 }

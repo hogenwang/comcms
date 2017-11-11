@@ -9,8 +9,8 @@ type ErrorController struct {
 }
 
 func (c *ErrorController) Error404() {
-	url := c.Ctx.Input.Url()
+	url := c.Ctx.Input.URL()
 	c.Data["Title"] = "404 Page not found"
 	c.Data["URL"] = url
-	c.TplNames = "404.html"
+	c.TplName = "404.html"
 }
