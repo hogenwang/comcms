@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1451749b-3687-4ce9-a51c-77526d5a8ac3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/alert.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/carousel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/collapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/dropdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/modal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/popover.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/scrollspy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/tab.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/tooltip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap/js/umd/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/extend/layer.ext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/layer/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/default/icon-ext.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/default/loading-0.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/default/loading-1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/default/loading-2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/layer/skin/layer.ext.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="article.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/admin/article.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="924">
@@ -74,15 +49,6 @@
               <folding>
                 <element signature="e#15#196#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -105,7 +71,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1932" />
@@ -150,7 +116,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
@@ -435,6 +401,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/admin/article.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -442,13 +415,6 @@
           <folding>
             <element signature="e#15#196#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
